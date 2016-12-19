@@ -55,10 +55,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
             }
             task.resume()
-            resignFirstResponder()
         } else {
             resultLabel.text = "The weather couldn't be found. Please try again."
         }
+        cityTextField.resignFirstResponder()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
